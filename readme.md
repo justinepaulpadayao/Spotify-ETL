@@ -61,12 +61,12 @@ Why do we need these modules?
 
 You must have a Spotify account and connect it to [Spotify Developer](https://developer.spotify.com/dashboard/) in order to access data from Spotify. Navigate to this [Endpoint](https://developer.spotify.com/console/get-recently-played/) once you've connected and you'll see the image below.
 
-![Spotify](images/spotify_image.png)
+![Spotify](images/spotify_image.PNG)
 
 The OAuth Token, which we will use to access information from the account, is the most critical piece of information we need from this page. Simply click the get token - green button at the bottom and choose the scope for user-read-recently-played only to request a token. 
 > Note that the token expires every 5 minutes so you may need to request token frequently.
 
-![Spotify_Scope](images/spotify_scope.png)
+![Spotify_Scope](images/spotify_scope.PNG)
 
 Let's start structuring how and what information we'll retrieve now that we've already set up our Spotify account. First, we must specify our variables, which are:
 

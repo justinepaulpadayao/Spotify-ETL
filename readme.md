@@ -63,7 +63,7 @@ You must have a Spotify account and connect it to [Spotify Developer](https://de
 
 ![Spotify](images/spotify_image.png)
 
-The OAuth Token, which we will use to access information from the account, is the most critical piece of information we need from this page. Simply click the get token - green button at the bottom and choose the scope for user-read-recently-played only to request a token. 
+The OAuth Token, which we will use to access information from the account, is the most critical piece of information we need from this page. Simply click the get token - green button at the bottom and choose the scope for user-read-recently-played only to request a token.
 > Note that the token expires every 5 minutes so you may need to request token frequently.
 
 ![Spotify_Scope](images/spotify_scope.png)
@@ -121,6 +121,6 @@ song_df = pd.DataFrame(song_dict, columns = ['song_name','artist_name','played_a
 print(song_df)
 </pre></code>
 
->Finding the correct subset of data in the json file is the most difficult thing here. I recommend that the reader do further research and practice on this subject. 
+>Finding the correct subset of data in the json file is the most difficult thing here. I recommend that the reader do further research and practice on this subject.
 
-That's it. We've completed the extraction process! 
+That's it. We've completed the extraction process!

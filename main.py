@@ -36,7 +36,7 @@ for song in data["items"]:
     song_names.append(song['track']['name'])
     artist_names.append(song['track']['album']['artists'][0]['name'])
     played_at_list.append(song['played_at'])
-    timestamps.append(song['played_at'][0:10])
+    timestamps.append(song['played_at'][:10])
 
 song_dict = {
     "song_name" : song_names,
@@ -57,9 +57,7 @@ def check_if_valid_data(df: pd.DataFrame):
         return False
 
     # Primary Key check
-    if pd.Series(df['played_at']).is_unique:
-        pass
-    else:
+    if not pd.Series(df['played_at']).is_unique:
         raise Exception("Primary Key Check is violated")
 
     #Check for Nulls
